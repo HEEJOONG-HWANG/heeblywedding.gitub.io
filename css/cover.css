@@ -159,7 +159,7 @@ body {
 header {
   background-image: url("../img/header.jpg");
   background-size: cover;
-  background-position: center;
+/*   background-position: center; */
 }
 
 @media (min-width: 48em) {
