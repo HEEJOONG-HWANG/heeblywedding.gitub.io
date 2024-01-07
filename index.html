@@ -392,8 +392,8 @@
                 marker.setMap(map);
             </script>
             <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.6.0/kakao.min.js" integrity="sha384-6MFdIr0zOira1CHQkedUqJVql0YtcZA1P0nbPrQYJXVJZUkTk/oX4U9GhUIs3/z8" crossorigin="anonymous"></script>
-            <script>Kakao.init('5a02e0c28d8f7f7cdcc2e530e65eb8b4'); // 사용하려는 앱의 JavaScript 키 입력 </script>
             <script>
+                Kakao.init('5a02e0c28d8f7f7cdcc2e530e65eb8b4'); 
                 function startNavigation() {
                     Kakao.Navi.start({
                         name: '컨벤션헤리츠',
@@ -403,17 +403,7 @@
                     });
                 }
             </script>
-            <div class="content-footer">	
-                <div style="width:26.5%; float: left; margin-left:8.8%">
-                    <a href="#none" onclick="TMAP.send('%EC%84%9C%EC%9A%B8%20%EC%98%81%EB%93%B1%ED%8F%AC%EA%B5%AC%20%EA%B5%AD%ED%9A%8C%EB%8C%80%EB%A1%9C38%EA%B8%B8%202%20%EB%8D%94%EC%BB%A8%EB%B2%A4%EC%85%98%20%EC%98%81%EB%93%B1%ED%8F%AC%EC%A0%90');" class="ui-link">
-                        <div class="change-area" id="img_tmap_prev" change-data="img">
-                            <input type="hidden" value="img_tmap" name="addition_key[]">
-                            <input type="hidden" value="292227" name="addition_value[]">
-                            <img id="img_tmap_prev_img" class="width-max bkw" src="./img/footer/tmap.png">	
-                                        
-                        </div>
-                    </a>
-                </div>
+            <div class="content-footer" style="margin-top: 2rem;">	
                 <div style="width: 26.5%; float: left;">
                     <a href="javascript:startNavigation()" class="kakao_navi ui-link">
                         <div class="change-area" id="img_kakaonavi_prev" change-data="img">
@@ -423,7 +413,7 @@
                         </div>
                     </a>
                 </div>
-                <div style="width: 26.5%; float: left; margin-right:8.8%;">
+                <div style="width: 26.5%; float: left;">
                     <a href="https://naver.me/GvdSpvpm" target="_blank" class="ui-link">
                         <div class="change-area" id="img_naver_prev" change-data="img">
                             <input type="hidden" value="img_naver" name="addition_key[]">
