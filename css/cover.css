@@ -238,6 +238,7 @@ header {
   font-family: NanumMyeongjo-b;
   line-height: 2em;
   font-size: 1.02rem;
+  color: #333;
   background-color: rgb(238, 238, 240);
 }
 
@@ -423,30 +424,40 @@ header {
 .section7-button {
   font-family: NanumMyeongjo-b;
   font-size: 1.2rem;
-  background-color: #CC9999;
-  color: #fff;
+  background-color: rgb(238, 238, 240);
+  color: #333;
   border: 0;
   border-radius: 50px;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   margin-bottom: 0.7em;
+  justify-content: space-evenly;
+}
+
+.section7-button-sub {
+  background-color: rgb(238, 238, 240);
+  border-radius: 50px;
+  border: 0;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-left: 1rem;
 }
 
 .section7-button:hover {
-  background-color: #CC9999;
-  color: #fff;
+  background-color: rgb(238, 238, 240);
+  color: #333;
   border: 0;
 }
 
 .section7-button:active {
-  background-color: #996666;
-  color: #fff;
+  background-color: rgb(227, 227, 240);
+  color: #333;
   border: 0;
 }
 
 .section7-button:valid {
-  background-color: #CC9999;
-  color: #fff;
+  background-color: rgb(238, 238, 240);
+  color: #333;
   border: 0;
 }
 
