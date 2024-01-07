@@ -373,6 +373,8 @@
             <div id="map" class="wow fadeInUp" style="width:100%;height:400px;"></div>
 
             <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5a02e0c28d8f7f7cdcc2e530e65eb8b4"></script>
+            <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.6.0/kakao.min.js" integrity="sha384-6MFdIr0zOira1CHQkedUqJVql0YtcZA1P0nbPrQYJXVJZUkTk/oX4U9GhUIs3/z8" crossorigin="anonymous"></script>
+            <script>Kakao.init('5a02e0c28d8f7f7cdcc2e530e65eb8b4'); // 사용하려는 앱의 JavaScript 키 입력 </script>
             <script>
                 var mapContainer = document.getElementById('map'), // 지도를 표시할 div
                     mapOption = {
@@ -390,9 +392,17 @@
 
                 // 마커가 지도 위에 표시되도록 설정합니다
                 marker.setMap(map);
+                function startNavigation() {
+                    Kakao.Navi.start(
+                        name: '컨벤션헤리츠',
+                        x: 37.51321919323285,
+                        y: 127.03148687456309,
+                        coordType: 'wgs84',
+                    });
+                }
             </script>
             <div class="content-footer">	
-                <div style="width:33.3%; float: left;">
+                <div style="width:26.5%; float: left; margin-left:8.8%">
                     <a href="#none" onclick="TMAP.send('%EC%84%9C%EC%9A%B8%20%EC%98%81%EB%93%B1%ED%8F%AC%EA%B5%AC%20%EA%B5%AD%ED%9A%8C%EB%8C%80%EB%A1%9C38%EA%B8%B8%202%20%EB%8D%94%EC%BB%A8%EB%B2%A4%EC%85%98%20%EC%98%81%EB%93%B1%ED%8F%AC%EC%A0%90');" class="ui-link">
                         <div class="change-area" id="img_tmap_prev" change-data="img">
                             <input type="hidden" value="img_tmap" name="addition_key[]">
@@ -402,20 +412,19 @@
                         </div>
                     </a>
                 </div>
-                <div style="width: 33.3%; float: left;">
-                    <a href="#none" class="kakao_navi ui-link">
+                <div style="width: 26.5%; float: left;">
+                    <a href="javascript:startNavigation()" class="kakao_navi ui-link">
                         <div class="change-area" id="img_kakaonavi_prev" change-data="img">
-                             <input type="hidden" value="img_kakaonavi" name="addition_key[]">
+                            <input type="hidden" value="img_kakaonavi" name="addition_key[]">
                             <input type="hidden" value="292228" name="addition_value[]">
-                            <img id="img_kakaonavi_prev_img" class="width-max bkw" src="./img/footer/kakao.jpg">	
-                                        
+                            <img id="img_kakaonavi_prev_img" class="width-max bkw" src="./img/footer/kakao.jpg">	            
                         </div>
                     </a>
                 </div>
-                <div style="width: 26.5%; float: left;" margin-right:>
-                    <a href="https://m.map.naver.com/search2/search.naver?query=%EC%BB%A8%EB%B2%A4%EC%85%98%ED%97%A4%EB%A6%AC%EC%B8%A0&sm=hty&style=v5" target="_blank" class="ui-link">
+                <div style="width: 26.5%; float: left; margin-right:8.8%;">
+                    <a href="https://naver.me/GvdSpvpm" target="_blank" class="ui-link">
                         <div class="change-area" id="img_naver_prev" change-data="img">
-                                                                                                                                                                                            <input type="hidden" value="img_naver" name="addition_key[]">
+                            <input type="hidden" value="img_naver" name="addition_key[]">
                             <input type="hidden" value="292229" name="addition_value[]">
                             <img id="img_naver_prev_img" class="width-max bkw" src="./img/footer/naver.png">	
                                         
