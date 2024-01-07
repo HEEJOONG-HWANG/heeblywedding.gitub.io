@@ -235,7 +235,7 @@ header {
 }
 
 .section2-sub {
-  font-family: NanumMyeongjo-b;
+  font-family: NanumMyeongjo-r;
   line-height: 2em;
   font-size: 1.02rem;
   color: #333;
@@ -419,6 +419,12 @@ header {
   font-family: NanumMyeongjo-b;
   line-height: 1.4em;
   font-size: 1.4rem;
+}
+.section7-sub{
+  font-family: 'NanumMyeongjo-r';
+  color: #333;
+  line-height: 2.2rem;
+  font-size: 1.1rem;
 }
 
 .section7-button {
